@@ -1,44 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+@font-face {
+   font-family: raphtalia;
+   src: url('../fonts/raphtalia.ttf');
+ }
 
 /* Section One*/
-.section_one{
-   height: 100vh;
-   background-color: #292929 ;
-}
+.section_one{ height: 100vh; background-color: #292929 ; }
 
-.logo-main{
-   max-width: 45%;
-   
-}
+.logo-main{ max-width: 45%; }
 
 .main_title{
-   font-family: 'Lato', sans-serif;
+   font-family: 'Lobster', cursive;
+   font-size: 42px;
+   color: #f7484e;
+}
+
+/* Section Two */
+.section_two{ 
+   height: 100vh; 
+   background-color: #f7484e ;
+}
+
+.aboutme-logo{
+   max-width: 45% ;
+   padding-top:1.5em;
+}
+
+.about-col-logo{
+   height: 100vh;
+}
+
+.about-col-text{
+   background-color: rgb(249, 251, 253);
+   padding-top: 10%;
+}
+
+
+/* Section Three */
+.section_three{ 
+   height: 100vh; 
+}
+
+.projects-col-logo,
+.projects-col-text{
+   height: 100%;
+}
+.projects-col-logo{
+   background-color: #ffffff;
+}
+
+.projects-col-logo img{
+   padding-top: 45%;
+}
+
+.project-blk{
+   /* border: 1px solid blue; */
+   height: 25vh;
+   width: 100%;
+   margin-left:-1%;
+   overflow: hidden;
+}
+
+.project-blk:hover div{ transform: scale(1.5); }
+
+.project-blk div:first-child{
+   background-repeat: no-repeat;
+   background-size: cover;
+   transition: transform 10s;
+   height: 100%;
+}
+
+.p1-back-pic{
+   background-image: url("../img/projects/echeveria.jpg");
+   background-position-y: 15%;
+}
+
+.p2-back-pic{
+   background-image: url("../img/projects/metro.jpg");
+   background-position-y: 45%;
+}
+
+.p3-back-pic{
+   background-image: url("../img/projects/twerk.jpg");
+   background-position-y: 45%;
+}
+
+.p4-back-pic{
+   background-image: url("../img/projects/restaurant.jpg");
+   background-position-y: 35%;
+}
+
+
+/* section four */
+
+.section_four{ 
+   height: 100vh; 
+}
+
+.contact-col-logo,
+.contact-col-text{
+   height: 100%;
+}
+.contact-col-text{
+   background-color: #292929;
+}
+
+.contact-col-text img{
+   padding-top: 45%;
+}
+
+.socialbtns{
+   padding-bottom: 42px;
+}
+
+.mailme a{
+   padding-top: 32px;
+   font-size: 1.8em;
+   color: #f7484e;
+   text-decoration: underline;
+}
+
+.mailme a:hover{
+   text-decoration: none;
+}
+
+
+/* Menus */
+.nav_sections{
+   font-family: 'Lobster', cursive;
+   color: #f7484e;
+   font-size: 28px;
+}
+
+.nav-link {
+   border: 2px solid transparent;
+   color: #f7484e;
+   transition: 200ms;
+   border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover  {
+   border-bottom: 2px solid white;
+   color: #f7484e;
+}
+
+.about-menu .nav-item .nav-link,
+.projects-menu .nav-item .nav-link{
+   font-family: 'Lobster', cursive;
+   padding: 0px 6px 0px 6px;
+   font-size: 24px;
+   color: #000000;
+}
+
+.projects-menu .nav-item .nav-link{
+   color: #f7484e;
+}
+
+.contact-menu .nav-item .nav-link{
+   color: #f7484e;
+}
+
+.projects-menu .nav-item .nav-link:hover  {
+   border-bottom: 2px solid #292929;
+   color: #f7484e;
+}
+
+.contact-menu .nav-item .nav-link:hover  {
+   border-bottom: 2px solid #ffffff;
    color: #f7484e;
 }
 
 
-/* Section Two */
-.section_two{
-   height: 100vh;
-   background-color: #f7484e ;
+
+/* Efectts css */
+.logo-main {
+   width: 25%;
+	top: 50%;
+	left: 50%;
+	transform-style: preserve-3d;
+	animation: rotate 3s ease-in-out infinite;
 }
 
-.about-col{
- height: 100vh;
+@keyframes rotate {
+	100% {
+		transform: rotateY(1turn);
+	}
 }
-
-.about-flex{
-   border: 1px solid blue;
-}
-
-.aboutme-logo{
-max-width: 45% ;
-
-
-}
-
-
-
 
 /* start bio photo */
 .hexagon {
@@ -88,48 +237,43 @@ max-width: 45% ;
 /* end bio photo */
 
 
-
-
-
-
-
-/* Section Three */
-.section_three{
-   height: 100vh;
-   background-color: #ffffff ;
-}
-
-
-/* Menus */
-
-.nav_sections{
-   font-family: 'Lato', sans-serif;
-   color: #f7484e;
-}
-
-.nav-link {
-   border: 2px solid transparent;
-   color: #f7484e;
-}
-
-.nav-link:hover  {
-   border-bottom: 2px solid white;
-   color: #f7484e;
-}
-
-
-/* Efectts css */
-
-.logo-main {
-	top: 50%;
-	left: 50%;
-	transform-style: preserve-3d;
-	animation: rotate 3s ease-in-out infinite;
-}
-
-@keyframes rotate {
-	100% {
-		transform: rotateY(1turn);
-	}
-}
-
+/* social buttons */
+.fa {
+   padding: 15px;
+   font-size: 30px;
+   width: 48px;
+   text-align: center;
+   text-decoration: none;
+   margin: 5px 2px;
+ }
+ 
+ .fa:hover {
+      color: white;
+      text-decoration: none;
+ }
+ 
+ .fa-facebook {
+   background: #3B5998;
+   color: white;
+ }
+ 
+ .fa-twitter {
+   background: #55ACEE;
+   color: white;
+ }
+ 
+ .fa-linkedin {
+   background: #007bb5;
+   color: white;
+ }
+ 
+ .fa-youtube {
+   background: #bb0000;
+   color: white;
+ }
+ 
+ .fa-instagram {
+   background: #125688;
+   color: white;
+ }
+ 
